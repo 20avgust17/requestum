@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  src-web:
+    build: .
+    command: uvicorn src.main:app --host 0.0.0.0
+    volumes:
+      - .:/src
+    ports:
+      - ${SRC_PORT}:${DOCKER_PORT}

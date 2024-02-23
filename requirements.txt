@@ -1,0 +1,5 @@
+Fastapi==0.103.1
+pydantic==1.10.14
+requests~=2.31.0
+uvicorn
+jinja2
